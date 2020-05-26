@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 2: Scatterplot Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Exercise 2: Scatterplot Matrix</h1>
+    <h2>Task 1: Cell Sizes</h2>
+    <p>Compute the constants <em>cellWidth</em> and <em>cellHeight</em> which determine the size of each cell in the
+        matrix. The final matrix should fill the <em>width</em> and <em>height</em> but leave the amount of pixels given
+        in <em>padding</em> to the left and right of the matrix as well as between the rows and columns. Avoid
+        non-integer values as they can lead to blurred lines in your final result.</p>
+    <h2>Task 2: Color</h2>
+    <p>Setup a <em>color</em> scale that encodes the categorical attribute <em>species</em>. If implemented correctly,
+        the code cell below the declaration of <em>color</em> should display a legend for the color instead of the hint
+        to implement the color scale. Choose an appropriate color scheme from the <a
+            href="https://observablehq.com/@d3/color-schemes">d3 color schemes</a>.</p>
+    <h2>Task 3: Scatterplot Matrix</h2>
+    <p>The code cell below already sets up the scatterplot matrix but does not draw the data items. Implement the
+        drawing of the scatterplot for each cell of the matrix. Use the scales for <em>x</em> and <em>y</em> that are
+        created in the appendix of this document. See the lecture for an image of a scatterplot matrix of the same data
+        to validate your result.</p>
+    <h2>Task 4: Brushing and Linking</h2>
+    <p>The function below sets up a brush for each cell of the scatterplot matrix and is used above. The d3 brush
+        already provides all the brushing functionality. The brushing rectangle starts at (<em>x0</em>, <em>y0</em>) and
+        goes to (<em>x1</em>, <em>y1</em>) with regard to the extent that was set for the brush. Implement the linking
+        by de-emphasizing data items that are not inside the brushing area.</p>
+
+    <div id="vis"></div>
+
+    <script src="d3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
